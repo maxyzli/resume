@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex
+% Author : Max Li
+% Based off of: https://github.com/maxsarratt/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Max Li} \\ \vspace{4pt}
+    Taipei, Taiwan \\ \vspace{4pt}
+    \small \raisebox{-0.1\height}\faPhone\ +(886)-978-632-991 ~ \href{mailto:maxsarratt@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{maxsarratt@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/maxsarratt/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/maxsarratt}}  ~
+    \href{https://github.com/maxsarratt}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/maxsarratt}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Cheng Kung University}{Tainan, Taiwan}
+      {Bachelor of Science in Aerospace Engineering}{Sep. 2012 -- June. 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ic3.network}{Paris, France}
+      {Software Engineer}{May 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Analyzed performance on the searching mechanism to find bottlenecks and rewrote the implementation using Elasticsearch. Increased the query speed by 53\%.}
+        \resumeItem{Designed and implemented a continuous build-test-deployment (CI/CD) system with multiple component pipelines using GitHub Actions to support weekly releases and out-of-cycle releases based on business needs. Increased 30\% of development efficiency.}
+        \resumeItem{Designed, developed, and maintained an open-source microservice service for verifying profiles against schemas.}
+        \resumeItem{Established a data dashboard to analyze the daily transaction metrics of a half-million users.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Rspective}{Katowice, Poland}
+      {Software Engineer}{Nov 2018 - May 2019}
+      \resumeItemListStart
+        \resumeItem{Implemented various advertising strategies by connecting different microservices, increasing the exposure of each targeting advertisement.}
+        \resumeItem{Cooperate with the data science and DevOps team to re-evaluate a better solution through different metrics for the image processing system.}
+        \resumeItem{Worked with the product growth team on highlight notifications, improving audience targeting, and increasing user active rate by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Maodou.io}{Beijing, China}
+      {Junior Software Engineer}{Aug 2016 - Oct 2018}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a large-scale web service to support hundreds of thousands of online learners 6 months after launch.}
+        \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+        \resumeItem{Increased test coverage for existing projects by 70\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
