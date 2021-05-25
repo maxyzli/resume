@@ -22,8 +22,6 @@
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
-
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -50,8 +48,7 @@
 \setlength{\tabcolsep}{0in}
 
 
-%-------------------------
-% Custom commands
+
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -88,44 +85,26 @@
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-
-
-
-
-
-
-% Max
-
-% Adjust margins
-%-------------------------------------------
+%----------------------------------------------------------------------------------------
+%	ADJUST MARGINS
+%----------------------------------------------------------------------------------------
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
 \addtolength{\topmargin}{-.7in}
 \addtolength{\textheight}{1.4in}
 
-
-
-
-
-
-
-% Sections formatting
-%-------------------------------------------
+%----------------------------------------------------------------------------------------
+%	SECTIONS FORMATTING
+%----------------------------------------------------------------------------------------
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-
-
-
-
-
-% Custom commands
-%-------------------------------------------
+%----------------------------------------------------------------------------------------
+%	CUSTOM COMMANDS
+%----------------------------------------------------------------------------------------
 \newcommand{\resumeItemTwo}[2]{
   \item{
     \textbf{#1}{: \small #2 \vspace{-2pt}}
@@ -136,39 +115,40 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-% Ensure that generate pdf is machine readable/ATS parsable
+%----------------------------------------------------------------------------------------
+%	Ensure that generate PDF is machine readable/ATS parsable
+%----------------------------------------------------------------------------------------
+\input{glyphtounicode}
 \pdfgentounicode=1
 
-
-
-
-
-
-
-
-
-
+%----------------------------------------------------------------------------------------
+%	DOCUMENT BEGIN
+%----------------------------------------------------------------------------------------
 \begin{document}
 
-%----------HEADING----------
+%----------------------------------------------------------------------------------------
+%	HEADING SECTION
+%----------------------------------------------------------------------------------------
 \begin{center}
     {\Huge \scshape Max Li} \\ \vspace{4pt}
-    Taipei, Taiwan \\ \vspace{4pt}
-    \small \raisebox{-0.1\height}\faPhone\ +(886) 978-632-991 ~ \href{mailto:maxsarratt@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{maxsarratt@gmail.com}} ~ 
-    \href{https://www.linkedin.com/in/maxsarratt/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/maxsarratt}}  ~
-    \href{https://github.com/maxsarratt}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/maxsarratt}}
+    +(886) 978-632-991 {$\diamond$} Taipei, Taiwan \\ \vspace{4pt} \href{mailto:maxsarratt@gmail.com}{\underline{maxsarratt@gmail.com}} {$\diamond$} \href{https://www.linkedin.com/in/maxsarratt/}{\underline{linkedin.com/in/maxsarratt}} {$\diamond$} \href{https://github.com/maxsarratt}{\underline{github.com/maxsarratt}}
     \vspace{-8pt}
 \end{center}
 
-%-----------OBJECTIVE-----------------
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
 \section{Objective}
   \begin{flushleft}
-    {Software engineer with 5+ years of relevant experience in backend software development. Seeking full-time SDE opportunity to utilize my skills and abilities in a value-driven company that offers professional growth while being resourceful, innovative, and flexible, driving myself towards the development of cutting-edge technologies for the future technologic landscape.}
+    {Vision-driven professional with a 5+ year record of backend software development. Seeking full-time SDE opportunity to utilize my skills and abilities in a value-driven company that offers professional growth while being resourceful, innovative, and flexible, driving myself towards the development of cutting-edge technologies for the future technologic landscape.}
   \end{flushleft}
   
-% Print Skills
-%-------------------------------------------
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
 \section{Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Programming Languages}
@@ -181,17 +161,20 @@
         {IntelliJ IDEA, Visual Studio Code, Amazon Web Services}
   \resumeSubHeadingListEnd
 
-% Print Projects
-%-------------------------------------------
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
 \section{Open-Source Contributions}
   \resumeSubHeadingListStart
     \resumeSubItem{Murmurations Services}
-      {A microservice built with Go and Kubernetes that validates store profiles against schemas, and provides API for later aggregation. Currently, it has validated more than 10K store profiles. (Project link: \href{https://github.com/MurmurationsNetwork/MurmurationsServices}{\underline{github.com/MurmurationsNetwork/MurmurationsServices)}}}
+      {A microservice I built with Go and Kubernetes which helps to validate store profiles against schemas, and provides API for later aggregation. Currently, it has validated more than 10K store profiles. (Project link: \href{https://github.com/MurmurationsNetwork/MurmurationsServices}{\underline{github.com/MurmurationsNetwork/MurmurationsServices)}}}
     \resumeSubItem{Mutual Credit Communication System}
-      {An API service built with Go and Docker which enables a network of trusted individuals to pay each other without conventional money. It's been running continuously for 2 years, and more than thousands of individuals have traded with each other. (Project link: \href{https://github.com/ic3network/mccs-alpha-api}{\underline{github.com/ic3network/mccs-alpha-api)}}}
+      {An API service I built with Go and Docker to enable a network of trusted individuals to pay each other without conventional money. It's been running continuously for 2 years, and more than thousands of individuals have traded with each other. (Project link: \href{https://github.com/ic3network/mccs-alpha-api}{\underline{github.com/ic3network/mccs-alpha-api)}}}
   \resumeSubHeadingListEnd
 
-%-----------EXPERIENCE-----------------
+%----------------------------------------------------------------------------------------
+%	INDUSTRIAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 \section{Industrial Experience}
   \resumeSubHeadingListStart
 
@@ -199,43 +182,35 @@
       {ic3.network}{Paris, France}
       {Software Engineer (Remote Work)}{May 2019 - Present}
       \resumeItemListStart
-        \resumeItem{Analyzed performance bottlenecks on the existing searching mechanism and rewrote the implementation with Elasticsearch. Increased the query speed by 53\%.}
-        \resumeItem{Designed and implemented a continuous build-test-deployment (CI/CD) system using GitHub Actions to support weekly releases and out-of-cycle releases. Increased 30\% of development efficiency.}
-        \resumeItem{Extracted and transformed multiple data sources into a data warehouse and create dashboards in Grafana to analyze daily transaction metrics of a half-million users.}
+        \resumeItem{Examine performance bottlenecks on existing search mechanism, utilizing Elasticsearch to rewrite the implementation, ultimately increasing the query speed by 53\%.}
+        \resumeItem{Devise and execute a continuous build-test-deployment (CI/CD) system using GitHub Actions to support weekly releases and out-of-cycle releases, increasing development efficiency by 30\%.}
+        \resumeItem{Transform extracted data sources into a data warehouse, constructing dashboards in Grafana to analyze daily transaction metrics of a half-million users.}
       \resumeItemListEnd
-      
-% --------Multiple Positions Heading------------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
     \resumeSubheading
       {Rspective}{Katowice, Poland}
       {Software Engineer (Remote Work)}{Nov 2018 - May 2019}
       \resumeItemListStart
-        \resumeItem{Built a Node.js backend service and implemented various advertising strategies, increasing 30\% of the exposure rate for each targeting advertisement.}
-        \resumeItem{Worked with the product growth team on highlight notifications based on user activities; Improved audience targeting and increased user active rate by 40\%.}
-        \resumeItem{Cooperate with the data science and DevOps team to evaluate a better solution for the image recognition system through different metrics and reduced \$25K annual costs.}
+        \resumeItem{Formulated a Node.js backend service and administered various advertising strategies, increasing 30\% of the exposure rate for each targeting advertisement.}
+        \resumeItem{Collaborated with the product growth team of 15 people on highlight notifications based on user activities, improving audience targeting and increasing active user rate by 40\%.}
+        \resumeItem{Fostered communication with the data science and DevOps teams, collaboratively evaluating and establishing a better solution for the image recognition system through different metrics, ultimately rescuing \$25K annual costs.}
+        \resumeItem{Encouraged team members to adopt emerging standards for software application development architecture and tools.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Maodou.io}{Beijing, China}
       {Junior Software Engineer}{Aug 2016 - Oct 2018}
       \resumeItemListStart
-        \resumeItem{Designed and implemented a large-scale web service using Node.js and MongoDB to support hundreds of thousands of online learners 6 months after launch.}
-        \resumeItem{Created scripts for automation testing. Improved team efficiency by 20\% that achieved to reduce the effort of 1000+ hours of manual testing.}
+        \resumeItem{Drafted and initiated a large-scale web service using Node.js and MongoDB to support +100,000 of online learners 6 months after launch.}
+        \resumeItem{Generated scripts for automation testing in order to improve team efficiency by 20\% and reduce the effort of more than 1,000 hours of manual testing.}
+        \resumeItem{Succeeded in rapid application development, as well as the management of technological issues.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
   
-  
- 
-%-----------EDUCATION-----------------
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -246,5 +221,7 @@
       {Bachelor of Science in Aerospace Engineering}{Sep 2012 - June 2016}
   \resumeSubHeadingListEnd
 
-%-------------------------------------------
+%----------------------------------------------------------------------------------------
+%	DOCUMENT END
+%----------------------------------------------------------------------------------------
 \end{document}
