@@ -11,6 +11,6 @@ Check out the live version on Overleaf - [Max Resume](https://www.overleaf.com/r
 
 ## Paid Services
 
+- [MentorCruise](https://mentorcruise.com/)
 - [FAANGPath](https://faangpath.com/)
 - [Levels.fyi](https://www.levels.fyi/services/)
-- [MentorCruise](https://mentorcruise.com/)
