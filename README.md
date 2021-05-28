@@ -9,7 +9,8 @@ Check out the live version on Overleaf - [Max Resume](https://www.overleaf.com/r
 - [9-Page Complete Interview Prep Pack](src/9-page-complete-interview-prep-pack.pdf)
 - [How to nail your virtual interview](src/how-to-nail-your-virtual-interview.pdf)
 
-## Pay Services
+## Paid Services
 
 - [FAANGPath](https://faangpath.com/)
 - [Levels.fyi](https://www.levels.fyi/services/)
+- [MentorCruise](https://mentorcruise.com/)
