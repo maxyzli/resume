@@ -4,6 +4,11 @@ A single-page, one-column resume for software developers.
 
 Check out the live version on Overleaf - [Max Resume](https://www.overleaf.com/read/yjfvjvhdhgbx)
 
+## Services
+
+- [FAANGPath](https://faangpath.com/)
+- [Levels.fyi](https://www.levels.fyi/services/)
+
 ## Resources
 
 - [9-Page Complete Interview Prep Pack](src/9-page-complete-interview-prep-pack.pdf)
