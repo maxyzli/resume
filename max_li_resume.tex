@@ -1,216 +1,76 @@
-%-------------------------
-% Resume in Latex
-% Author : Max Li
-% Website: https://github.com/maxsarratt/resume
-% License : MIT
-%------------------------
+\documentclass{resume} % Use the custom resume.cls style
 
-\documentclass[letterpaper,11pt]{article}
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Max Li} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+886 978-632-991  \\ \href{mailto:maxsarratt@gmail.com}{maxsarratt@gmail.com} \\ \href{https://linkedin.com/in/maxsarratt}{LinkedIn} \\ \href{https://github.com/maxsarratt}{GitHub} \\ Taipei, Taiwan} %
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-%----------------------------------------------------------------------------------------
-%	Header/Footer
-%----------------------------------------------------------------------------------------
-
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-%----------------------------------------------------------------------------------------
-%	ADJUST MARGINS
-%----------------------------------------------------------------------------------------
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
-
-%----------------------------------------------------------------------------------------
-%	SECTIONS FORMATTING
-%----------------------------------------------------------------------------------------
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-%----------------------------------------------------------------------------------------
-%	Ensure that generate PDF is machine readable/ATS parsable
-%----------------------------------------------------------------------------------------
-\input{glyphtounicode}
-\pdfgentounicode=1
-
-%----------------------------------------------------------------------------------------
-%	CUSTOM COMMANDS
-%----------------------------------------------------------------------------------------
-\newcommand{\resumeItemTwo}[2]{
-  \item{
-    \textbf{#1}{: \small #2 \vspace{-2pt}}
-  }
-}
-\newcommand{\resumeSubItem}[2]{\resumeItemTwo{#1}{#2}\vspace{-4pt}}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%----------------------------------------------------------------------------------------
-%	DOCUMENT BEGIN
-%----------------------------------------------------------------------------------------
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	HEADING SECTION
+% SUMMARY	
 %----------------------------------------------------------------------------------------
-\begin{center}
-    {\Huge \scshape Max Li} \\ \vspace{4pt}
-    +(886) 978-632-991 {$\diamond$} Taipei, Taiwan \\ \vspace{4pt} \href{mailto:maxsarratt@gmail.com}{\underline{maxsarratt@gmail.com}} {$\diamond$} \href{https://www.linkedin.com/in/maxsarratt/}{\underline{linkedin.com/in/maxsarratt}} {$\diamond$} \href{https://github.com/maxsarratt}{\underline{github.com/maxsarratt}}
-    \vspace{-8pt}
-\end{center}
+\begin{rSection}{SUMMARY}
+Vision-driven software professional with 5+ years of backend software development skills in Java and Go web services.  Strongly focusing on delivering actionable and quantifiable results for projects.  Seeking full-time SDE opportunity to utilize my skills and abilities in a value-driven company that offers professional growth.
+\end{rSection}
+
 
 %----------------------------------------------------------------------------------------
-%	OBJECTIVE SECTION
+% TECHINICAL SKILLS	
 %----------------------------------------------------------------------------------------
-\section{Objective}
-  \begin{flushleft}
-    {Vision-driven professional with a 5+ year record of backend software development. Seeking full-time SDE opportunity to utilize my skills and abilities in a value-driven company that offers professional growth while being resourceful, innovative, and flexible, driving myself towards the development of cutting-edge technologies for the future technologic landscape.}
-  \end{flushleft}
-  
-%----------------------------------------------------------------------------------------
-%	SKILLS SECTION
-%----------------------------------------------------------------------------------------
-\section{Skills}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Programming Languages}
-      {Java, JavaScript, SQL, Golang}
-    \resumeSubItem{Database}
-      {PostgreSQL, MySQL, MongoDB, Redis}
-    \resumeSubItem{Technologies/Frameworks}
-      {Git, JUnit, Docker, Kubernetes, Linux, AWS}
-      \resumeSubItem{Tools}
-        {IntelliJ IDEA, Visual Studio Code}
-  \resumeSubHeadingListEnd
 
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-\section{Open-Source Contributions}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Murmurations Services}
-      {Designed and implemented a microservice with Go and Kubernetes, which helps validate store profiles against schemas and provides API for later aggregation. Currently, it has validated more than 10K store profiles. (Project link: \href{https://github.com/MurmurationsNetwork/MurmurationsServices}{\underline{github.com/MurmurationsNetwork/MurmurationsServices)}}}
-    \resumeSubItem{Mutual Credit Communication System}
-      {Drawn up and constructed a containerized Go API service to enable a network of trusted individuals to pay each other without conventional money. It's been running continuously for 2 years, and more than thousands of individuals have traded with each other. (Project link: \href{https://github.com/ic3network/mccs-alpha-api}{\underline{github.com/ic3network/mccs-alpha-api)}}}
-  \resumeSubHeadingListEnd
+\begin{rSection}{SKILLS}
 
-%----------------------------------------------------------------------------------------
-%	INDUSTRIAL EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-\section{Industrial Experience}
-  \resumeSubHeadingListStart
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming & Java, Go, SQL, JavaScript
+\\
+Databases & PostgreSQL, MySQL, MongoDB, Redis  \\
+Technologies & Git, Postman, JUnit, Docker, Linux, AWS \\
+Domains & Backend Engineering, Software Development, REST APIs, CI/CD  \\
+\end{tabular}
+\end{rSection}
 
-    \resumeSubheading
-      {ic3.network}{Paris, France}
-      {Software Engineer (Remote Work)}{May 2019 - Present}
-      \resumeItemListStart
-        \resumeItem{Examine performance bottlenecks on existing search mechanism, utilizing Elasticsearch to rewrite the implementation, ultimately increasing the query speed by 53\%.}
-        \resumeItem{Devise and execute a continuous build-test-deployment (CI/CD) system using GitHub Actions to support weekly releases and out-of-cycle releases, increasing development efficiency by 30\%.}
-        \resumeItem{Transform extracted data sources into a data warehouse, constructing dashboards in Grafana to analyze daily transaction metrics of a half-million users.}
-      \resumeItemListEnd
+\begin{rSection}{EXPERIENCE}
 
-    \resumeSubheading
-      {Rspective}{Katowice, Poland}
-      {Software Engineer (Remote Work)}{Nov 2018 - May 2019}
-      \resumeItemListStart
-        \resumeItem{Formulated a Node.js backend service and administered various advertising strategies, increasing 30\% of the exposure rate for each targeting advertisement.}
-        \resumeItem{Collaborated with the product growth team of 15 people on highlight notifications based on user activities, improving audience targeting and increasing active user rate by 40\%.}
-        \resumeItem{Fostered communication with the data science and DevOps teams, collaboratively evaluating and establishing a better solution for the image recognition system through different metrics, ultimately rescuing \$25K annual costs.}
-        \resumeItem{Encouraged team members to adopt emerging standards for software application development architecture and tools.}
-      \resumeItemListEnd
+\textbf{ic3.network} \hfill Paris, France (Remote)\\
+Software Engineer \hfill \textit{Jun 2019 - Present}
+ \begin{itemize}
+    \itemsep -3pt {} 
+\item Designed and implemented a microservice with Go and Kubernetes, which helps validate store profiles against schemas and provides API for later aggregation. Currently, it has validated more than 10K store profiles. \href{https://github.com/MurmurationsNetwork/MurmurationsServices}{[Github Repo]}
+\item Examined company search API response time implemented with the full-text search mechanism in MongoDB, and combined it with Elasticsearch to rewrite the implementation in Go, ultimately increasing the speed by 53\%.
+\item Architected a continuous build-test-deployment (CI/CD) system using GitHub Actions to support weekly releases and out-of-cycle releases, increasing development efficiency by 30\%.
+\item  Created cron jobs to fetch user metadata and payment transactions from different services using Go, extract and combine information, and store inside PostgreSQL. Construct dashboards in Grafana to analyze users' behavior of a half-million users.
+ \end{itemize}
 
-    \resumeSubheading
-      {Maodou.io}{Beijing, China}
-      {Junior Software Engineer}{Aug 2016 - Oct 2018}
-      \resumeItemListStart
-        \resumeItem{Drafted and initiated a large-scale web service using Node.js and MongoDB to support +100,000 of online learners 6 months after launch.}
-        \resumeItem{Generated JS scripts for automation testing in order to improve team efficiency by 20\% and reduce the effort of more than 1,000 hours of manual testing.}
-        \resumeItem{Succeeded in rapid application development, as well as the management of technological issues.}
-      \resumeItemListEnd
+\textbf{Rspective} \hfill Katowice, Poland (Remote)\\
+Software Engineer  \hfill \textit{Nov 2018 - May 2019}
+ \begin{itemize}
+    \itemsep -3pt {} 
+    \item Cooperated with a front-end team, defined an API using OpenAPI, and implemented with Node.js for querying advertising content based on the user city, gender, industry, etc. As a result, increased 30\% of the exposure rate for each targeting advertisement.
+    \item  Teamed up with the product growth team and implemented a feature that sent recent hot topics via mobile push notification for users with low activity in Node.js, improving audience targeting and increasing active user rate by 40\%.
+    \item Set up a Node.js project to detect explicit content within an image using Google Vision AI, communicated with data science and DevOps teams, and compared the accuracy and cost with an in-house image recognition system. Ultimately rescuing \$25K annual costs.
+ \end{itemize}
 
-  \resumeSubHeadingListEnd
-  
+\textbf{Maodou.io} \hfill Beijing, China\\
+Software Engineer  \hfill \textit{Aug 2016 - Oct 2018}
+ \begin{itemize}
+    \itemsep -3pt {}
+    \item Designed and initiated a large-scale web service using Node.js and MongoDB to support +100,000 MAU 6 months after launch.
+    \item  Created JS scripts for API testing using Postman in order to improve team efficiency by 20\% and reduce the effort of more than 1,000 hours of manual testing.
+ \end{itemize}
+
+\end{rSection} 
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Microverse}{Remote}
-      {Remote Full Stack Web Development Program}{Mar 2018 - Nov 2018}
-    \resumeSubheading
-      {National Cheng Kung University}{Tainan, Taiwan}
-      {Bachelor of Science in Aerospace Engineering}{Sep 2012 - June 2016}
-  \resumeSubHeadingListEnd
 
-%----------------------------------------------------------------------------------------
-%	DOCUMENT END
-%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+\vspace{-1.25em}
+\item {\bf Bachelor of Science, Aerospace Engineering}, 
+National Cheng Kung University (Taiwan) \hfill {\textit{2012 - 2016}}
+\end{rSection}
+
 \end{document}
